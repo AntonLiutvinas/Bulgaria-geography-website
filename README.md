@@ -1,2 +1,2 @@
 # Bulgaria-website
- Website about Bulgaria.
+ Website about Bulgaria's geography.
