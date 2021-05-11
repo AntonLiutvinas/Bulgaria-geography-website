@@ -1,0 +1,448 @@
+/* Font styles */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400&display=swap');
+
+body {
+	margin: 0;
+	overflow-x: hidden;
+}
+
+/* Welcome section */
+
+.welcome-section {
+	width: 100%;
+	height: 750px;
+}
+
+.welcome-section .title {
+	font-size: 5.3125em;
+	font-family: 'Fira Sans', sans-serif;
+	margin-top: 275px;
+}
+
+.banner {
+	background-image: url('../images/marina_reka_forest.jpg');
+  	background-repeat: no-repeat;
+  	background-position: center;
+  	background-size: cover;
+  	width: inherit;
+  	height: inherit;
+  	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* Introduction section */
+
+.introduction {
+	background-color: white;
+	width: 100%;
+}
+
+.introduction .title {
+	font-size: 3.25em;
+	color: black;
+	font-family: 'Alegreya', serif;
+	text-align: center;
+	font-weight: 600;
+	position: relative;
+	top: -25px;
+}
+
+.introduction .subtitle {
+	font-size: 2.1875em;
+	color: black;
+	font-family: 'Alegreya', serif;
+	text-align: center;
+	position: relative;
+	top: -57px;
+}
+
+.introduction .welcome {
+	height: 271px;
+	width: 360px;
+	display: block;
+	margin: -61px auto 0 auto;
+}
+
+/* Borders section */
+
+.borders {
+	width: 100%;
+}
+
+.borders .title {
+	color: black;
+	margin: 0 0 0 0;
+}
+
+.borders .text {
+	z-index: 2;
+	width: 800px;
+	position: absolute;
+	margin: 0 72px 0 0;
+}
+
+.borders .flexbox {
+	justify-content: space-around;
+	display: flex;
+	align-items: center;
+}
+
+.banner2 img {
+	height: 95%;
+	width: 60%;
+	margin: 0 auto 0 auto;
+}
+
+.mobile-bord {
+	display: none;
+}
+
+@media only screen and (max-width: 1780px) {
+	.borders .flexbox {
+		display: block;
+	}
+
+	.borders .text {
+		position: static;
+		margin: 30px auto 0 auto;
+		color: black;
+		font-family: 'Rubik', sans-serif;
+		font-weight: 400;
+		width: 85%;
+	}
+
+	.borders .computer {
+		display: none;
+	}
+
+	.borders .mobile-bord {
+		display: block;
+		position: relative;
+		top: 40px;
+	}
+}
+
+/* Defining the styles design */
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.flexing {
+	display: flex;
+}
+
+.text-holder {
+	width: 50%;
+	display: inline-block;
+}
+
+.text-box {
+	width: 80%;
+	margin: auto;
+}
+
+.title {
+	font-family: 'Merriweather', serif;
+	font-size: 3.125em;
+	text-align: center;
+	color: white;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+.subtitle {
+	font-family: 'Merriweather', serif;
+	font-size: 1.875em;
+	text-align: center;
+	color: white;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+.text {
+	font-family: 'Merriweather', serif;
+	font-size: 1.34375em;
+	text-align: center;
+	color: white;
+}
+
+.ul-holder {
+	display: flex;
+	justify-content: center;
+}
+
+ul {
+	margin: 0 auto;
+}
+
+li, li a {
+	color: white;
+	font-family: 'Merriweather', serif;
+	font-size: 1.125em;
+	text-decoration: none;
+}
+
+.image-holder {
+  	background-repeat: no-repeat;
+  	background-position: center;
+  	background-size: cover;
+  	width: 50%;
+  	display: inline-block;
+}
+
+.mobile {
+	display: none;
+}
+
+@media only screen and (max-width: 1090px) {
+	.left {
+	}
+
+	.right {
+	}
+
+	.flexing {
+		display: block;
+	}
+
+	.text-holder {
+		width: 100%;
+		display: block;
+		position: relative;
+	}
+
+	.text-box {
+		width: 85%;
+	}
+
+	.image-holder {
+		width: 100%;
+		display: block;
+		position: relative;
+	}
+
+	.mobile {
+		display: block;
+	}
+
+	.computer {
+		display: none;
+	}
+
+	li, li a {
+		font-size: 1.5em;
+	}
+}
+
+/* Demographics section */
+
+.demographics {
+	width: 100%;
+  /* 800px*/
+	margin: 80px 0 0 0;
+}
+
+.demographics .text-holder {
+	background-color: #00966e;
+	padding: 0 0 40px 0;
+}
+
+.demographics .image-holder {
+	background-image: url('../images/background_crowd.jpg');
+	min-height: 100px;
+}
+
+@media only screen and (max-width: 1090px) {
+	.demographics .image-holder {
+		height: 660px;
+	}
+}
+
+/* Climate section */
+
+.climate {
+	width: 100%;
+	/* 613px*/
+}
+
+.climate .image-holder {
+	background-image: url('../images/balkan.jpg');
+	min-height: 100px;
+}
+
+.climate .text-holder {
+	background-color: #009933;
+	padding: 0 0 59px 0;
+}
+
+.climate .text-holder .one {
+	margin: 40px auto 0 auto;
+}
+
+@media only screen and (max-width: 1090px) {
+	.climate .image-holder {
+		height: 660px;
+	}
+}
+
+/* Rodope section */
+
+.rodope {
+	width: 100%;
+/* 800px*/
+}
+
+.rodope .text-holder {
+	background-color: #00a637;
+	padding: 0 0 40px 0;
+}
+
+.rodope .image-holder {
+	background-image: url('../images/perelik.jpg');
+	min-height: 100px;
+}
+
+@media only screen and (max-width: 1090px) {
+	.rodope .image-holder {
+		height: 660px;
+	}
+}
+
+/* Pirin section */
+
+.pirin {
+	width: 100%;
+}
+
+.pirin .text-holder {
+	background-color: #018f2f;
+	padding: 0 0 40px 0;
+}
+
+.pirin .image-holder {
+	background-image: url('../images/pirin.jpg');
+	min-height: 100px;
+}
+
+@media only screen and (max-width: 1090px) {
+	.pirin .image-holder {
+		height: 660px;
+	}
+}
+
+/* Rila section */
+
+.rila {
+	width: 100%;
+}
+
+.rila .text-holder {
+	background-color: hsl(127, 71%, 37%);
+	padding: 0 0 40px 0;
+}
+
+.rila .image-holder {
+	background-image: url('../images/rilalakes.png');
+	min-height: 100px;
+}
+
+@media only screen and (max-width: 1090px) {
+	.rila .image-holder {
+		height: 660px;
+	}
+}
+
+/* Black sea section */
+
+.black-sea {
+	width: 100%;
+}
+
+.black-sea .text-holder {
+	background-color: hsl(198, 78%, 33%);
+	padding: 0 0 40px 0;
+}
+
+.black-sea .image-holder {
+	background-image: url('../images/cape emine2.jpg');
+	min-height: 100px;
+}
+
+@media only screen and (max-width: 1090px) {
+	.black-sea .image-holder {
+		height: 660px;
+	}
+}
+
+/* Add section */
+
+.ad {
+	width: 100%;
+	height: 200px;
+}
+
+.ad:hover {
+	cursor: pointer;
+}
+
+.history {
+	background-repeat: no-repeat;
+  	background-position: center;
+  	background-size: cover;
+  	background-image: url('../images/history.jpg');
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+}
+
+.history .title, .biology .title {
+	font-size: 2.5em;
+	margin-left: 40px;
+	margin-right: 40px;		
+}
+
+.biology {
+	background-repeat: no-repeat;
+  	background-position: center;
+  	background-size: cover;
+  	background-image: url('../images/biology.jpg');
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+}
+
+@media only screen and (max-width: 1090px) {
+	.history .title, .biology .title {
+		font-size: 2em;
+	}
+}
+
+/* Footer */
+
+footer {
+	width: 100%;
+	height: 60px;
+	background-color: #808080;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+footer .link {
+	text-decoration: none;
+	color: white;
+	font-family: 'Fira Sans', sans-serif;
+}
+
+footer a {
+	margin: 30px;
+}
